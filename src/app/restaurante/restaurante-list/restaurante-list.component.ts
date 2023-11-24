@@ -15,7 +15,7 @@ export class RestauranteListComponent implements OnInit {
   selectedRestaurante!: RestauranteDetail;
   p: number = 1;
   searchedCategoria: any;
-  public seasonAVG: number = 0;
+  public max: string = '';
 
   getRestaurantes() {
     this.restauranteService.getRestaurantes().subscribe((restaurantes) => {
@@ -30,12 +30,16 @@ export class RestauranteListComponent implements OnInit {
   }
 
   getAvg() {
+    let mayor: number = 0;
+    let res: string= "";
     for (let i of this.restaurantes) {
-      //this.seasonAVG += i.seasons;
+      if (i.rating > mayor) {
+        mayor = i.rating;
+        res= i.name;
+      }
     }
-    
 
-    this.seasonAVG = this.seasonAVG / this.restaurantes.length;
+    this.max = res
   }
 
   ngOnInit() {
