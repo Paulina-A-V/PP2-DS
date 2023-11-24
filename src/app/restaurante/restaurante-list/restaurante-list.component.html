@@ -1,0 +1,40 @@
+<div class="container-fluid">
+
+<div class="selected-restaurante rounded" *ngIf="selected">
+  <app-restaurante-detail [restauranteDetail]="selectedRestaurante"></app-restaurante-detail>
+</div>
+
+
+     <table id="tablaTV" class="table table-hover table-dark">
+      <thead>
+          <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">País</th>
+              <th scope="col">Tipo de comida</th>
+              <th scope="col">Fundación</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let r of restaurantes" (click)="onSelected(r)">
+            <td>
+              <dd>{{r.id}}</dd>
+            </td>
+            <td>
+              <dd>{{r.name}}</dd>
+            </td>
+            <td>
+              <dd>{{r.country}}</dd>
+            </td>
+            <td>
+              <dd>{{r.cuisine}}</dd>
+            </td>
+            <td>
+              <dd>{{r.opening_year}}</dd>
+            </td>
+          </tr>
+      </tbody>
+  </table>
+  <h3>Mejor restaurante: {{seasonAVG}}</h3>
+</div>
+

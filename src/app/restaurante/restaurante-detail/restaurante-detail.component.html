@@ -1,0 +1,27 @@
+<!-- <div class="container-fluid">
+
+<img
+  class="card-img-top"
+  src="{{ restauranteDetail.image}}"
+  alt="{{ restauranteDetail.image }}"
+/>
+
+<h1> {{restauranteDetail.name}} </h1>
+<h6>
+  {{restauranteDetail.descripcion}} 
+</h6>
+
+<h5>Puntación</h5>
+<h6> {{restauranteDetail.rating}} </h6>
+
+</div> -->
+
+<div class="card" style="width: 18rem;">
+  <img src="{{ restauranteDetail.image}}" class="card-img-top" alt="{{ restauranteDetail.image}}">
+  <div class="card-body">
+    <h5 class="card-title">{{restauranteDetail.name}}</h5>
+    <h2 class="card-text">{{restauranteDetail.descripcion}} </h2>
+  </div>
+</div>
+
+<h2>{{restauranteDetail.descripcion}}</h2>
