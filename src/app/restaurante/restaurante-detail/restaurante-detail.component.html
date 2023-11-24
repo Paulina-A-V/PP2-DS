@@ -1,27 +1,14 @@
-<!-- <div class="container-fluid">
-
-<img
-  class="card-img-top"
-  src="{{ restauranteDetail.image}}"
-  alt="{{ restauranteDetail.image }}"
-/>
-
-<h1> {{restauranteDetail.name}} </h1>
-<h6>
-  {{restauranteDetail.descripcion}} 
-</h6>
-
-<h5>Puntación</h5>
-<h6> {{restauranteDetail.rating}} </h6>
-
-</div> -->
-
-<div class="card" style="width: 18rem;">
-  <img src="{{ restauranteDetail.image}}" class="card-img-top" alt="{{ restauranteDetail.image}}">
-  <div class="card-body">
-    <h5 class="card-title">{{restauranteDetail.name}}</h5>
-    <h2 class="card-text">{{restauranteDetail.descripcion}} </h2>
+<div class="'container-fluid">
+  <div class="card" style="width: 18rem;">
+    <img src="{{ restauranteDetail.image}}" class="card-img-top" alt="{{ restauranteDetail.image}}">
+    <div class="card-body">
+      <h3 class="card-title">{{restauranteDetail.name}}</h3>
+      <h6 class="card-text">{{restauranteDetail.description}}</h6>
+      <h3> Puntuación</h3>
+      <h3>  {{restauranteDetail.rating}}</h3>
+    </div>
   </div>
+  
+
 </div>
 
-<h5>{{restauranteDetail.descripcion}}</h5>

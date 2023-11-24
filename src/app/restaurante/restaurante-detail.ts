@@ -8,9 +8,9 @@ export class RestauranteDetail extends Restaurante{
         country: string,
         cuisine: string,
         rating: string,
-        descricpion: string,
+        description: string,
         image: number,) {
-      super(id, name, opening_year, country, cuisine, rating, descricpion, image);
+      super(id, name, opening_year, country, cuisine, rating, description, image);
     
     }
   

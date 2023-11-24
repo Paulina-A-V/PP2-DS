@@ -7,7 +7,7 @@ export class Restaurante {
   country: string;
   cuisine: string;
   rating: number;
-  descripcion: string;
+  description: string;
   image: string;
 
   public constructor(
@@ -17,7 +17,7 @@ export class Restaurante {
     country: string,
     cuisine: string,
     image: string,
-    descripcion: string,
+    description: string,
     rating: number
   ) {
     this.id = id;
@@ -26,7 +26,7 @@ export class Restaurante {
     this.country = country;
     this.cuisine = cuisine;
     this.image = image;
-    this.descripcion = descripcion;
+    this.description = description;
     this.rating = rating;
   }
 }
